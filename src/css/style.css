@@ -1,0 +1,143 @@
+.page-body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-header__nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.page-header__list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.5rem 0rem;
+}
+
+.page-header__nav a,
+.page-main__ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-header__list a:hover {
+    color: red;
+}
+
+.page-header__list ::marker {
+    content: "";
+}
+
+.page-header__li-button {
+    padding: 0.5rem;
+    margin: -1rem;
+    border-radius: 0.3rem;
+    background-color: red;
+}
+
+.page-main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 95%;
+    height: 80vh;
+    align-items: center;
+    justify-self: center;
+}
+
+.page-main__section {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    align-items: left;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.page-main__section * {
+    margin: 0;
+    padding: 0;
+}
+
+.page-main__span {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.page-main__h1 {
+    color: red;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.page-main__h2 {
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.page-main__p {
+    padding: 1rem 0rem;
+    line-height: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page-main__ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: left;
+    gap: 0.8rem;
+    padding: 0rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page-main__ul ::marker {
+    content: "";
+}
+
+.page-main__li {
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 0.3rem;
+    background-color: rgb(87, 87, 87);
+}
+
+.page-main__li a {
+    color: red;
+}
+
+.page-main__li a:hover {
+    color: white;
+}
+
+#download-resume {
+    background-color: red;
+}
+
+#download-resume a {
+    color: white;
+}
+
+#download-resume a:hover {
+    color: black;
+}
+
+#contact-me {
+    background-color: transparent;
+    border: 0.1rem solid red;
+}
+
+#image-benjamin {
+    background-color: yellow;
+
+}
