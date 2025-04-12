@@ -56,7 +56,6 @@
     display: flex;
     flex-flow: column wrap;
     flex: 1;
-    align-items: left;
     gap: 0.5rem;
     box-sizing: border-box;
 }
@@ -138,6 +137,10 @@
 }
 
 #image-benjamin {
-    background-color: yellow;
-
+    display: flex;
+    align-self: center;
+    background-color: rgb(24, 204, 33);
+    height: 30rem;
+    width: 35%;
+    object-fit: cover;
 }
