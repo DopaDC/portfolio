@@ -16,5 +16,8 @@
     "url": "https://github.com/DopaDC/portfolio/issues"
   },
   "homepage": "https://github.com/DopaDC/portfolio#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
 }
