@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DopaDC/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Benjamin Gutierrez <chanta el correo aquí>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DopaDC/portfolio/issues"
+  },
+  "homepage": "https://github.com/DopaDC/portfolio#readme",
+  "description": ""
+}
