@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Tangerine';
+    src: url(../font/Tangerine-Regular.ttf);
+    font-weight: normal;
+}
+
 :root {
     --accent: #09ff00;
     --dark: #000000;
@@ -53,14 +59,42 @@
 .page-main__ul a {
     color: white;
     text-decoration: none;
-}   
+}
 
 .page-header__list a:hover {
     color: var(--accent);
 }
 
-.page-header__list ::marker {
+.page-header__nav ::marker {
     content: "";
+}
+
+.page-header__div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5em;
+}
+
+.page-header__div a {
+    transition: all 0.5s ease;
+}
+
+.page-header__div:hover>ul>li>a {
+    font-size: 35px;
+    color: var(--accent);
+    transition: all 0.2s ease;
+}
+
+.page-header__list-name {
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: "Tangerine";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.page-header__list-initial a {
+    color: var(--accent);
 }
 
 .page-header__li-button {
@@ -68,6 +102,17 @@
     margin: -1em;
     border-radius: 0.3em;
     background-color: var(--accent);
+}
+
+.page-header__li-button a,
+#download-resume a {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.page-header__li-button:hover>a,
+#download-resume a:hover {
+    color: white;
 }
 
 .page-main {
@@ -95,13 +140,17 @@
     font-weight: 800;
 }
 
-.page-main__h1 {
+.page-main__div-name {
     color: var(--accent);
     font-size: 35px;
     font-weight: 800;
 }
 
-.page-main__h2 {
+#surname {
+    color: white;
+}
+
+.page-main__h1 {
     color: var(--accent);
     font-size: 25px;
     font-weight: 600;
@@ -120,7 +169,7 @@
     align-items: center;
     justify-content: left;
     gap: 0.8em;
-    padding: 0em 1em;
+    padding: 0.5em 1em;
     font-size: 14px;
     font-weight: 500;
 }
@@ -148,14 +197,6 @@
     background-color: var(--accent);
 }
 
-#download-resume a {
-    color: white;
-}
-
-#download-resume a:hover {
-    color: var(--dark);
-}
-
 #contact-me {
     background-color: transparent;
     border: 0.1em solid var(--accent);
@@ -163,8 +204,8 @@
 
 #image-benjamin {
     align-self: center;
-    height: 30em;
-    width: 10em;
+    height: 26em;
+    width: 20em;
     object-fit: cover;
     margin-bottom: 5em;
     z-index: 3;
@@ -190,7 +231,7 @@
     height: 24em;
     bottom: 0em;
     border-radius: 24em;
-    border: solid .3em var(--accent); 
+    border: solid .3em var(--accent);
     z-index: 3;
 }
 
