@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url(../assets/font/Tangerine-Regular.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --accent: #09ff00;
+    --dark: #111111;
+}
+
+.skills-body {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--dark);
+}
+
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    overflow: hidden;
+}
+
+.skills-main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: calc(100vh - 4em);
+    align-content: center;
+    justify-content: center;
+    padding: 2em 2em;
+    gap: 1em;
+    background-color: brown;
+}
+
+.skills-main__section {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 18em;
+    background-color: aqua;
+}
+
+#mid-section {
+    width: 42em;
+}
+
+.skills-main__section-div {
+    display: flex;
+    width: 100%;
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68, 34, 9);
+    border: #09ff00 solid 1px;
+}
+
+.span-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    font-size: 2em;
+}
+
+#skills-main__icons {
+    display: flex;
+    height: 100%;
+}
